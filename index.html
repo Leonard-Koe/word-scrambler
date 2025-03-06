@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>World Scrambler</h1>
+    <p id="wordDisplay"></p>
+    <input type="button" id="gameStartButton" value="start" onclick="startGame(easy)">
+
+    <form id="game" onsubmit="return false">
+        <input type="text" id="guess" name="guessValue">
+        <input type="submit" id="guessButton" value="guess" onclick="guessFunction()">
+    </form>
+    <p id="wrongMessage" style="visibility:hidden; color: red;">Wrong! Take another Guess!</p>
+</body>
+</html>
