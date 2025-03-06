@@ -1,11 +1,16 @@
-const easy = ["Hello", "Test", "Flower", "Dog", "Cat"]
+const easy = ["Journey", "Thunder", "Lantern", "Bicycle", "Whisper", "Diamond", "Courage", "Glacier", "Picture", "Harvest", "Firefly", "Mountain", "Cactus", "Library", "Fortune", "Freedom", "Crimson", "Giraffe", "Rainbow", "Parasol", "Compass", "Galaxy", "Emerald", "Sandbox", "Lantern", "Meadow", "Phoenix", "Notebook", "Serpent", "Wintery", "Justice", "Plummet", "Vortex", "Blossom", "Spectra", "Harmony", "Journey", "Timber", "Fortune", "Miracle"]
 let wordSet = []
 let word;
 let difficulty;
 
 function randomizeWord(){
     word = wordSet[Math.floor(Math.random() * (wordSet.length))]
-    document.getElementById("wordDisplay").innerHTML = word;
+    for (let i = 0; i < word.length; i++){
+        var shuffled = word.split('').sort(function(){return 0.5-Math.random()}).join('');
+    }
+
+    document.getElementById("wordDisplay").innerHTML = shuffled;
+    document.getElementById("solution").innerHTML = word;
 }
 
 
