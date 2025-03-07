@@ -17,6 +17,7 @@ let wordSet = easy;
 let word;
 let difficulty;
 let score = 0;
+let health = 3;
 
 function sleep(milliseconds) {
     var start = new Date().getTime();
@@ -83,6 +84,12 @@ function guessFunction(){
         startGame(wordSet)
     } else{
         document.getElementById("wrongMessage").style.visibility = "visible"
+        health--;
+        console.log(health);
+        document.getElementById("health").value = health;
+        if (health<=0){
+            window.location.href = "lostScreen.html";
+        }
     }
     document.getElementById("game").reset();
 }

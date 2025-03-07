@@ -20,8 +20,10 @@
         <div id="guessDiv">
             <input type="button" class="button-44" id="gameStartButton" value="Start the Game!" onclick="startGame()">
             <form id="game" onsubmit="return false">
-                <input type="text" id="guess" name="guessValue" placeholder="Input your guess!"><br>
+                <input type="text" id="guess" name="guessValue" placeholder="Input your guess!">
+                <input type="button" class="button-44" id="health" value="3"><br>
                 <input type="submit" class="button-44" id="guessButton" value="guess" onclick="guessFunction()">
+                
             </form>
             <p id="wrongMessage" style="visibility:hidden; color: red;">Wrong! Take another Guess!</p>
             <p id="solution"></p>
