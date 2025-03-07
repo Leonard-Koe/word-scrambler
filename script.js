@@ -13,7 +13,7 @@ const hard = ["Obscure", "Zephyr", "Labyrinth", "Cryptic", "Nebulous", "Quixotic
 "Obsequious", "Lugubrious", "Ineffable", "Eccentric", "Mellifluous", "Surreptitious", "Propensity", "Redolent", "Cacophony", "Juxtaposition",  
 "Paradox", "Incandescent", "Recalcitrant", "Discombobulate", "Grandiloquent", "Resplendent", "Idiosyncrasy", "Magnanimous", "Quintessential", "Preposterous"]
 
-let wordSet = []
+let wordSet = easy;
 let word;
 let difficulty;
 let score = 0;
