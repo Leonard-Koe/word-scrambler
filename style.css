@@ -1,0 +1,118 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#headline {
+    text-align: center;
+    height: auto;
+    margin: auto;
+    margin-top: 150px;
+    width: 40%;
+}
+
+#guessDiv {
+    height: auto;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#wordDisplay {
+    margin: auto;
+    width: 40%;
+    border: 0px solid black;
+    padding: 10px;
+}
+
+
+
+/* CSS */
+.button-44 {
+  background: #e62143;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 33.4929px;
+  padding: .8em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  word-break: break-word;
+  border: 0;
+}
+
+.button-44:hover {
+  border-bottom-style: none;
+  border-color: #dadada;
+}
+
+#gameStartButton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    background-color: #16ac43;
+}
+
+#guessButton {
+    width: 20%;
+}
+
+#guess{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 33.4929px;
+    border-radius: 11px;
+    padding: .8em 1em;
+    text-align: center;
+    font-size: large;
+    color: black;
+    border-color: #e62143;
+}
+
+#wrongMessage{
+    color: red;
+    font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+    font-size: 1.15em;
+    font: bold;
+}
+
+#difficulty {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#easy {
+    width: 20%;
+    background-color: green;
+    color: black;
+    margin: 10px;
+}
+#medium {
+    width: 20%;
+    background-color: yellow;
+    color: black;
+    margin: 10px;
+}
+#hard {
+    width: 20%;
+    background-color: red;
+    color: black;
+    margin: 10px;
+}

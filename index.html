@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>World Scrambler</h1>
-    <p id="wordDisplay"></p>
-    <input type="button" id="gameStartButton" value="start" onclick="startGame(easy)">
+    <div id="gameDiv">
+        <div id="headline">
+        <h1>Word Scrambler</h1>
+        <h2 id="wordDisplay"></h2>
+        <h3 id="scoreDisplay" style="visibility: hidden;">Score: 0</h3>
+    </div>
 
-    <form id="game" onsubmit="return false">
-        <input type="text" id="guess" name="guessValue">
-        <input type="submit" id="guessButton" value="guess" onclick="guessFunction()">
-    </form>
-    <p id="wrongMessage" style="visibility:hidden; color: red;">Wrong! Take another Guess!</p>
-    <p id="solution"></p>
+        
+
+        <div id="guessDiv">
+            <input type="button" class="button-44" id="gameStartButton" value="Start the Game!" onclick="startGame()">
+            <form id="game" onsubmit="return false">
+                <input type="text" id="guess" name="guessValue" placeholder="Input your guess!"><br>
+                <input type="submit" class="button-44" id="guessButton" value="guess" onclick="guessFunction()">
+            </form>
+            <p id="wrongMessage" style="visibility:hidden; color: red;">Wrong! Take another Guess!</p>
+            <p id="solution"></p>
+        </div>
+        <div id="difficulty">
+            <input type="button" class="button-44" id="easy" value="Easy" onclick="chooseDifficulty('easy')">
+            <input type="button" class="button-44" id="medium" value="Medium" onclick="chooseDifficulty('medium')">
+            <input type="button" class="button-44" id="hard" value="Hard" onclick="chooseDifficulty('hard')">
+        </div>
+    </div>
 </body>
 </html>
