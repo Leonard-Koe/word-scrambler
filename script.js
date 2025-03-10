@@ -19,14 +19,6 @@ let difficulty;
 let score = 0;
 let health = 3;
 
-function sleep(milliseconds) {
-    var start = new Date().getTime();
-    for (var i = 0; i < 1e7; i++) {
-      if ((new Date().getTime() - start) > milliseconds){
-        break;
-      }
-    }
-  }
 
 function randomizeWord(){
     word = wordSet[Math.floor(Math.random() * (wordSet.length))]
