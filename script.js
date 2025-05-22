@@ -11,7 +11,7 @@ const medium = ["Puzzle", "Winter", "Summer", "Autumn", "Spring", "Bottle", "Roc
 const hard = ["Obscure", "Zephyr", "Labyrinth", "Cryptic", "Nebulous", "Quixotic", "Ephemeral", "Melancholy", "Ubiquitous", "Euphoria",  
 "Serendipity", "Chrysanthemum", "Obfuscate", "Abyss", "Eloquent", "Perspicacious", "Sycophant", "Esoteric", "Conundrum", "Pernicious",  
 "Obsequious", "Lugubrious", "Ineffable", "Eccentric", "Mellifluous", "Surreptitious", "Propensity", "Redolent", "Cacophony", "Juxtaposition",  
-"Paradox", "Incandescent", "Recalcitrant", "Discombobulate", "Grandiloquent", "Resplendent", "Idiosyncrasy", "Magnanimous", "Quintessential", "Preposterous"]
+"Paradox", "Incandescent", "Recalcitrant", "Discombobulate", "Grandiloquent", "Resplendent", "Idiosyncrasy", "Magnanimous", "Quintessential", "Preposterous", "penis"]
 
 let wordSet = easy;
 let word;
@@ -19,14 +19,6 @@ let difficulty;
 let score = 0;
 let health = 3;
 
-function sleep(milliseconds) {
-    var start = new Date().getTime();
-    for (var i = 0; i < 1e7; i++) {
-      if ((new Date().getTime() - start) > milliseconds){
-        break;
-      }
-    }
-  }
 
 function randomizeWord(){
     word = wordSet[Math.floor(Math.random() * (wordSet.length))]
