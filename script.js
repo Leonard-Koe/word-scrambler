@@ -11,7 +11,7 @@ const medium = ["Puzzle", "Winter", "Summer", "Autumn", "Spring", "Bottle", "Roc
 const hard = ["Obscure", "Zephyr", "Labyrinth", "Cryptic", "Nebulous", "Quixotic", "Ephemeral", "Melancholy", "Ubiquitous", "Euphoria",  
 "Serendipity", "Chrysanthemum", "Obfuscate", "Abyss", "Eloquent", "Perspicacious", "Sycophant", "Esoteric", "Conundrum", "Pernicious",  
 "Obsequious", "Lugubrious", "Ineffable", "Eccentric", "Mellifluous", "Surreptitious", "Propensity", "Redolent", "Cacophony", "Juxtaposition",  
-"Paradox", "Incandescent", "Recalcitrant", "Discombobulate", "Grandiloquent", "Resplendent", "Idiosyncrasy", "Magnanimous", "Quintessential", "Preposterous"]
+"Paradox", "Incandescent", "Recalcitrant", "Discombobulate", "Grandiloquent", "Resplendent", "Idiosyncrasy", "Magnanimous", "Quintessential", "Preposterous", "penis"]
 
 let wordSet = easy;
 let word;
